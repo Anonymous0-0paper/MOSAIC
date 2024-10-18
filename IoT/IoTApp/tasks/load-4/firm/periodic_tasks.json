@@ -1,0 +1,114 @@
+[
+    {
+        "id": 0,
+        "type": "HARD",
+        "executionCost": 15219,
+        "memory": 46428,
+        "deadline": 37284
+    },
+    {
+        "id": 1,
+        "type": "HARD",
+        "executionCost": 22280,
+        "memory": 67995,
+        "deadline": 22348
+    },
+    {
+        "id": 2,
+        "type": "HARD",
+        "executionCost": 15775,
+        "memory": 64007,
+        "deadline": 33765
+    },
+    {
+        "id": 3,
+        "type": "HARD",
+        "executionCost": 16400,
+        "memory": 74927,
+        "deadline": 25402
+    },
+    {
+        "id": 4,
+        "type": "FIRM",
+        "executionCost": 16694,
+        "memory": 47820,
+        "deadline": 44935
+    },
+    {
+        "id": 5,
+        "type": "FIRM",
+        "executionCost": 17335,
+        "memory": 62312,
+        "deadline": 30803
+    },
+    {
+        "id": 6,
+        "type": "FIRM",
+        "executionCost": 10350,
+        "memory": 77021,
+        "deadline": 53582
+    },
+    {
+        "id": 7,
+        "type": "FIRM",
+        "executionCost": 22190,
+        "memory": 51530,
+        "deadline": 26133
+    },
+    {
+        "id": 8,
+        "type": "FIRM",
+        "executionCost": 23585,
+        "memory": 87723,
+        "deadline": 26188
+    },
+    {
+        "id": 9,
+        "type": "FIRM",
+        "executionCost": 11936,
+        "memory": 71363,
+        "deadline": 41344
+    },
+    {
+        "id": 10,
+        "type": "FIRM",
+        "executionCost": 12238,
+        "memory": 97222,
+        "deadline": 52241
+    },
+    {
+        "id": 11,
+        "type": "FIRM",
+        "executionCost": 21232,
+        "memory": 55135,
+        "deadline": 63489
+    },
+    {
+        "id": 12,
+        "type": "SOFT",
+        "executionCost": 13984,
+        "memory": 26607,
+        "deadline": 51400
+    },
+    {
+        "id": 13,
+        "type": "SOFT",
+        "executionCost": 19617,
+        "memory": 94874,
+        "deadline": 51972
+    },
+    {
+        "id": 14,
+        "type": "SOFT",
+        "executionCost": 19728,
+        "memory": 61921,
+        "deadline": 30009
+    },
+    {
+        "id": 15,
+        "type": "SOFT",
+        "executionCost": 14284,
+        "memory": 29476,
+        "deadline": 77578
+    }
+]
