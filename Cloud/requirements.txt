@@ -1,0 +1,8 @@
+numpy
+matplotlib
+scipy
+django
+setuptools
+djangorestframework
+drf-yasg
+requests
