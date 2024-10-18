@@ -1,0 +1,522 @@
+[
+    {
+        "id": 0,
+        "mode": "GE",
+        "subtasks": [
+            {
+                "id": 0,
+                "type": "HARD",
+                "executionCost": 2417,
+                "memory": 97772
+            },
+            {
+                "id": 1,
+                "type": "HARD",
+                "executionCost": 2036,
+                "memory": 74943
+            },
+            {
+                "id": 2,
+                "type": "HARD",
+                "executionCost": 1210,
+                "memory": 26701
+            },
+            {
+                "id": 3,
+                "type": "HARD",
+                "executionCost": 4499,
+                "memory": 73804
+            },
+            {
+                "id": 4,
+                "type": "HARD",
+                "executionCost": 3895,
+                "memory": 68095
+            },
+            {
+                "id": 5,
+                "type": "HARD",
+                "executionCost": 1042,
+                "memory": 67107
+            },
+            {
+                "id": 6,
+                "type": "HARD",
+                "executionCost": 2511,
+                "memory": 89778
+            },
+            {
+                "id": 7,
+                "type": "HARD",
+                "executionCost": 1732,
+                "memory": 35108
+            },
+            {
+                "id": 8,
+                "type": "HARD",
+                "executionCost": 1223,
+                "memory": 23167
+            },
+            {
+                "id": 9,
+                "type": "HARD",
+                "executionCost": 3390,
+                "memory": 65746
+            }
+        ],
+        "edges": [
+            [
+                0,
+                1,
+                16
+            ],
+            [
+                1,
+                5,
+                16
+            ],
+            [
+                0,
+                2,
+                10
+            ],
+            [
+                2,
+                6,
+                17
+            ],
+            [
+                0,
+                3,
+                3
+            ],
+            [
+                3,
+                7,
+                2
+            ],
+            [
+                0,
+                4,
+                16
+            ],
+            [
+                4,
+                8,
+                5
+            ],
+            [
+                5,
+                6,
+                7
+            ],
+            [
+                6,
+                9,
+                7
+            ],
+            [
+                5,
+                7,
+                18
+            ],
+            [
+                5,
+                8,
+                14
+            ]
+        ],
+        "deadline": 168084,
+        "arrivalTime": 37871
+    },
+    {
+        "id": 1,
+        "mode": "GE",
+        "subtasks": [
+            {
+                "id": 0,
+                "type": "FIRM",
+                "executionCost": 2848,
+                "memory": 66065
+            },
+            {
+                "id": 1,
+                "type": "FIRM",
+                "executionCost": 2231,
+                "memory": 49171
+            },
+            {
+                "id": 2,
+                "type": "FIRM",
+                "executionCost": 1180,
+                "memory": 73947
+            },
+            {
+                "id": 3,
+                "type": "FIRM",
+                "executionCost": 3251,
+                "memory": 29267
+            },
+            {
+                "id": 4,
+                "type": "FIRM",
+                "executionCost": 4299,
+                "memory": 95466
+            },
+            {
+                "id": 5,
+                "type": "FIRM",
+                "executionCost": 1775,
+                "memory": 27128
+            },
+            {
+                "id": 6,
+                "type": "FIRM",
+                "executionCost": 2761,
+                "memory": 83926
+            },
+            {
+                "id": 7,
+                "type": "FIRM",
+                "executionCost": 3770,
+                "memory": 42012
+            },
+            {
+                "id": 8,
+                "type": "FIRM",
+                "executionCost": 2803,
+                "memory": 52928
+            },
+            {
+                "id": 9,
+                "type": "FIRM",
+                "executionCost": 2607,
+                "memory": 56269
+            }
+        ],
+        "edges": [
+            [
+                0,
+                1,
+                13
+            ],
+            [
+                1,
+                5,
+                18
+            ],
+            [
+                0,
+                2,
+                3
+            ],
+            [
+                2,
+                6,
+                1
+            ],
+            [
+                0,
+                3,
+                1
+            ],
+            [
+                3,
+                7,
+                5
+            ],
+            [
+                0,
+                4,
+                6
+            ],
+            [
+                4,
+                8,
+                16
+            ],
+            [
+                5,
+                6,
+                2
+            ],
+            [
+                6,
+                9,
+                13
+            ],
+            [
+                5,
+                7,
+                13
+            ],
+            [
+                5,
+                8,
+                1
+            ]
+        ],
+        "deadline": 182889,
+        "arrivalTime": 75505
+    },
+    {
+        "id": 2,
+        "mode": "GE",
+        "subtasks": [
+            {
+                "id": 0,
+                "type": "FIRM",
+                "executionCost": 4719,
+                "memory": 49030
+            },
+            {
+                "id": 1,
+                "type": "FIRM",
+                "executionCost": 4369,
+                "memory": 73415
+            },
+            {
+                "id": 2,
+                "type": "FIRM",
+                "executionCost": 4746,
+                "memory": 85318
+            },
+            {
+                "id": 3,
+                "type": "FIRM",
+                "executionCost": 3428,
+                "memory": 36922
+            },
+            {
+                "id": 4,
+                "type": "FIRM",
+                "executionCost": 1342,
+                "memory": 64504
+            },
+            {
+                "id": 5,
+                "type": "FIRM",
+                "executionCost": 1992,
+                "memory": 25505
+            },
+            {
+                "id": 6,
+                "type": "FIRM",
+                "executionCost": 3744,
+                "memory": 44714
+            },
+            {
+                "id": 7,
+                "type": "FIRM",
+                "executionCost": 4361,
+                "memory": 74339
+            },
+            {
+                "id": 8,
+                "type": "FIRM",
+                "executionCost": 3560,
+                "memory": 28963
+            },
+            {
+                "id": 9,
+                "type": "FIRM",
+                "executionCost": 4668,
+                "memory": 83705
+            }
+        ],
+        "edges": [
+            [
+                0,
+                1,
+                19
+            ],
+            [
+                1,
+                5,
+                15
+            ],
+            [
+                0,
+                2,
+                8
+            ],
+            [
+                2,
+                6,
+                7
+            ],
+            [
+                0,
+                3,
+                15
+            ],
+            [
+                3,
+                7,
+                13
+            ],
+            [
+                0,
+                4,
+                4
+            ],
+            [
+                4,
+                8,
+                12
+            ],
+            [
+                5,
+                6,
+                9
+            ],
+            [
+                6,
+                9,
+                9
+            ],
+            [
+                5,
+                7,
+                15
+            ],
+            [
+                5,
+                8,
+                18
+            ]
+        ],
+        "deadline": 161771,
+        "arrivalTime": 11903
+    },
+    {
+        "id": 3,
+        "mode": "GE",
+        "subtasks": [
+            {
+                "id": 0,
+                "type": "SOFT",
+                "executionCost": 3310,
+                "memory": 26631
+            },
+            {
+                "id": 1,
+                "type": "SOFT",
+                "executionCost": 3907,
+                "memory": 40080
+            },
+            {
+                "id": 2,
+                "type": "SOFT",
+                "executionCost": 3032,
+                "memory": 74323
+            },
+            {
+                "id": 3,
+                "type": "SOFT",
+                "executionCost": 1443,
+                "memory": 75747
+            },
+            {
+                "id": 4,
+                "type": "SOFT",
+                "executionCost": 4319,
+                "memory": 29451
+            },
+            {
+                "id": 5,
+                "type": "SOFT",
+                "executionCost": 4815,
+                "memory": 21943
+            },
+            {
+                "id": 6,
+                "type": "SOFT",
+                "executionCost": 1345,
+                "memory": 45468
+            },
+            {
+                "id": 7,
+                "type": "SOFT",
+                "executionCost": 2036,
+                "memory": 88852
+            },
+            {
+                "id": 8,
+                "type": "SOFT",
+                "executionCost": 3958,
+                "memory": 84365
+            },
+            {
+                "id": 9,
+                "type": "SOFT",
+                "executionCost": 3145,
+                "memory": 90459
+            }
+        ],
+        "edges": [
+            [
+                0,
+                1,
+                9
+            ],
+            [
+                1,
+                5,
+                18
+            ],
+            [
+                0,
+                2,
+                19
+            ],
+            [
+                2,
+                6,
+                15
+            ],
+            [
+                0,
+                3,
+                7
+            ],
+            [
+                3,
+                7,
+                16
+            ],
+            [
+                0,
+                4,
+                19
+            ],
+            [
+                4,
+                8,
+                9
+            ],
+            [
+                5,
+                6,
+                1
+            ],
+            [
+                6,
+                9,
+                4
+            ],
+            [
+                5,
+                7,
+                17
+            ],
+            [
+                5,
+                8,
+                4
+            ]
+        ],
+        "deadline": 178129,
+        "arrivalTime": 41173
+    }
+]
