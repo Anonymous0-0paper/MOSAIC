@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "type": "HARD",
+        "executionCost": 21920,
+        "memory": 63919,
+        "deadline": 27816
+    },
+    {
+        "id": 1,
+        "type": "HARD",
+        "executionCost": 21844,
+        "memory": 73032,
+        "deadline": 26678
+    },
+    {
+        "id": 2,
+        "type": "FIRM",
+        "executionCost": 10045,
+        "memory": 31308,
+        "deadline": 34443
+    },
+    {
+        "id": 3,
+        "type": "FIRM",
+        "executionCost": 14992,
+        "memory": 93752,
+        "deadline": 60911
+    },
+    {
+        "id": 4,
+        "type": "SOFT",
+        "executionCost": 10951,
+        "memory": 65091,
+        "deadline": 78340
+    },
+    {
+        "id": 5,
+        "type": "SOFT",
+        "executionCost": 11961,
+        "memory": 52987,
+        "deadline": 72312
+    }
+]

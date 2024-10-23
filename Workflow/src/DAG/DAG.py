@@ -12,7 +12,11 @@ from Workflow.src.DAG.DAGSubTask import DAGSubTask, DAGSubTaskEncoder
 class DAGMode(Enum):
     GE = "GE",
     FFT = "FFT",
-    FullyTopology = "FullyTopology"
+    FullyTopology = "FullyTopology",
+    Montage = "Montage",
+    Genome1000 = "Genome1000",
+    CasaWind = "CasaWind",
+
 
 
 class DAG:
@@ -51,7 +55,7 @@ class DAG:
         self.deadline = random.randint(deadline_min, deadline_max)
 
     def generate_arrival_time(self, scale: float):
-        self.arrival_time = abs(int(random.normal(1, scale)))
+        self.arrival_time = int(random.uniform(0, 1) * scale)
 
     def generate_communication_data_sizes(self, communication_min: int, communication_max: int):
         for edge in self.edges:

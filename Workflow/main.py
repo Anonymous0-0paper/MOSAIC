@@ -2,10 +2,13 @@ import math
 import os
 import random
 
+from Workflow.src.DAG.CasaWind import CaseWind
 from Workflow.src.DAG.DAG import DAG
 from Workflow.src.DAG.FFT import FFT
 from Workflow.src.DAG.FullTopologyDAG import FullTopologyDAG
 from Workflow.src.DAG.GE import GE
+from Workflow.src.DAG.Genome1000 import Genome1000
+from Workflow.src.DAG.Montage import Montage
 from Workflow.src.PeriodicTask import PeriodicTask
 from Workflow.src.SubTask import TaskType
 
@@ -106,13 +109,31 @@ if __name__ == '__main__':
         dag_index += 1
         dag_type_selected = dag_type
         if dag_type_selected == "Random":
-            dag_type_selected = random.choice(['FFT', 'GE', 'FullTopology'])
+            dag_type_selected = random.choice(['FFT', 'GE', 'FullTopology', 'CaseWind', 'Genome1000', 'Montage'])
 
-        if dag_type_selected == 'FFT':
+        if dag_type_selected == 'Montage':
+            dags.append(Montage.generate_dag(dag_index, dag_hard_size, TaskType.HARD, dag_hard_arrival_scale,
+                                             dag_hard_memory_min, dag_hard_memory_max, dag_hard_computation_min,
+                                             dag_hard_computation_max, dag_hard_deadline_min, dag_hard_deadline_max,
+                                             dag_hard_communication_min, dag_hard_communication_max))
+
+        elif dag_type_selected == 'CaseWind':
+            dags.append(CaseWind.generate_dag(dag_index, dag_hard_size, TaskType.HARD, dag_hard_arrival_scale,
+                                              dag_hard_memory_min, dag_hard_memory_max, dag_hard_computation_min,
+                                              dag_hard_computation_max, dag_hard_deadline_min, dag_hard_deadline_max,
+                                              dag_hard_communication_min, dag_hard_communication_max))
+        elif dag_type_selected == 'Genome1000':
+            dags.append(Genome1000.generate_dag(dag_index, dag_hard_size, TaskType.HARD, dag_hard_arrival_scale,
+                                                dag_hard_memory_min, dag_hard_memory_max, dag_hard_computation_min,
+                                                dag_hard_computation_max, dag_hard_deadline_min, dag_hard_deadline_max,
+                                                dag_hard_communication_min, dag_hard_communication_max))
+
+        elif dag_type_selected == 'FFT':
             dags.append(FFT.generate_dag(dag_index, dag_hard_size, TaskType.HARD, dag_hard_arrival_scale,
                                          dag_hard_memory_min, dag_hard_memory_max, dag_hard_computation_min,
                                          dag_hard_computation_max, dag_hard_deadline_min, dag_hard_deadline_max,
                                          dag_hard_communication_min, dag_hard_communication_max))
+
         elif dag_type_selected == 'GE':
             dags.append(GE.generate_dag(dag_index, dag_hard_size, TaskType.HARD, dag_hard_arrival_scale,
                                         dag_hard_memory_min, dag_hard_memory_max, dag_hard_computation_min,
@@ -135,13 +156,32 @@ if __name__ == '__main__':
         dag_index += 1
         dag_type_selected = dag_type
         if dag_type_selected == "Random":
-            dag_type_selected = random.choice(['FFT', 'GE', 'FullTopology'])
+            dag_type_selected = random.choice(['FFT', 'GE', 'FullTopology', 'Montage', 'CaseWind', 'Genome1000'])
 
-        if dag_type_selected == 'FFT':
+        if dag_type_selected == 'Montage':
+            dags.append(Montage.generate_dag(dag_index, dag_firm_size, TaskType.FIRM, dag_firm_arrival_scale,
+                                             dag_firm_memory_min, dag_firm_memory_max, dag_firm_computation_min,
+                                             dag_firm_computation_max, dag_firm_deadline_min, dag_firm_deadline_max,
+                                             dag_firm_communication_min, dag_firm_communication_max))
+
+        elif dag_type_selected == 'CaseWind':
+            dags.append(CaseWind.generate_dag(dag_index, dag_firm_size, TaskType.FIRM, dag_firm_arrival_scale,
+                                              dag_firm_memory_min, dag_firm_memory_max, dag_firm_computation_min,
+                                              dag_firm_computation_max, dag_firm_deadline_min, dag_firm_deadline_max,
+                                              dag_firm_communication_min, dag_firm_communication_max))
+
+        elif dag_type_selected == 'Genome1000':
+            dags.append(Genome1000.generate_dag(dag_index, dag_firm_size, TaskType.FIRM, dag_firm_arrival_scale,
+                                                dag_firm_memory_min, dag_firm_memory_max, dag_firm_computation_min,
+                                                dag_firm_computation_max, dag_firm_deadline_min, dag_firm_deadline_max,
+                                                dag_firm_communication_min, dag_firm_communication_max))
+
+        elif dag_type_selected == 'FFT':
             dags.append(FFT.generate_dag(dag_index, dag_firm_size, TaskType.FIRM, dag_firm_arrival_scale,
                                          dag_firm_memory_min, dag_firm_memory_max, dag_firm_computation_min,
                                          dag_firm_computation_max, dag_firm_deadline_min, dag_firm_deadline_max,
                                          dag_firm_communication_min, dag_firm_communication_max))
+
         elif dag_type_selected == 'GE':
             dags.append(GE.generate_dag(dag_index, dag_firm_size, TaskType.FIRM, dag_firm_arrival_scale,
                                         dag_firm_memory_min, dag_firm_memory_max, dag_firm_computation_min,
@@ -163,9 +203,27 @@ if __name__ == '__main__':
         dag_index += 1
         dag_type_selected = dag_type
         if dag_type_selected == "Random":
-            dag_type_selected = random.choice(['FFT', 'GE', 'FullTopology'])
+            dag_type_selected = random.choice(['FFT', 'GE', 'FullTopology', 'Montage', 'CaseWind', 'Genome1000'])
 
-        if dag_type_selected == 'FFT':
+        if dag_type_selected == 'Montage':
+            dags.append(Montage.generate_dag(dag_index, dag_soft_size, TaskType.SOFT, dag_soft_arrival_scale,
+                                             dag_soft_memory_min, dag_soft_memory_max, dag_soft_computation_min,
+                                             dag_soft_computation_max, dag_soft_deadline_min, dag_soft_deadline_max,
+                                             dag_soft_communication_min, dag_soft_communication_max))
+
+        elif dag_type_selected == 'CaseWind':
+            dags.append(CaseWind.generate_dag(dag_index, dag_soft_size, TaskType.SOFT, dag_soft_arrival_scale,
+                                              dag_soft_memory_min, dag_soft_memory_max, dag_soft_computation_min,
+                                              dag_soft_computation_max, dag_soft_deadline_min, dag_soft_deadline_max,
+                                              dag_soft_communication_min, dag_soft_communication_max))
+
+        elif dag_type_selected == 'Genome1000':
+            dags.append(Genome1000.generate_dag(dag_index, dag_soft_size, TaskType.SOFT, dag_soft_arrival_scale,
+                                                dag_soft_memory_min, dag_soft_memory_max, dag_soft_computation_min,
+                                                dag_soft_computation_max, dag_soft_deadline_min, dag_soft_deadline_max,
+                                                dag_soft_communication_min, dag_soft_communication_max))
+
+        elif dag_type_selected == 'FFT':
             dags.append(FFT.generate_dag(dag_index, dag_soft_size, TaskType.SOFT, dag_soft_arrival_scale,
                                          dag_soft_memory_min, dag_soft_memory_max, dag_soft_computation_min,
                                          dag_soft_computation_max, dag_soft_deadline_min, dag_soft_deadline_max,
@@ -186,8 +244,8 @@ if __name__ == '__main__':
                                                      1, int(math.sqrt(dag_soft_size)) * 2,
                                                      [-1, -1, -1]))
 
-    DAG.store(dags, "./Tasks/dags.json")
-    PeriodicTask.store(periodic_tasks, "./Tasks/periodic_tasks.json")
+    DAG.store(dags, "Tasks/dags.json")
+    PeriodicTask.store(periodic_tasks, "Tasks/periodic_tasks.json")
 
     if show_dag:
         for dag in dags:
