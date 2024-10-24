@@ -59,7 +59,7 @@ This guide will help you quickly set up and run the project using Python 3.12 in
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-repo/MEES.git
+   git [clone [https://github.com/your-repo/MEES.git](https://github.com/Anonymous0-0paper/MEES.git)]
    cd MEES
 
 2. **Install dependencies**:
