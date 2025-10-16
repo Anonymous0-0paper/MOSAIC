@@ -1,4 +1,4 @@
-# MEES: Mobility-Aware Energy Efficient Scheduling for Cyber-Physical Systems in Computing Continuum
+# MOSAIC: Mobility-Oriented Scheduling and Intelligent Resource Allocation for IoT
 ## Overview
 
 This project implements a Kubernetes-managed, Django-based architecture designed for task offloading and scheduling across Cloud, Edge, Fog, and IoT clusters. The system is structured to manage IoT devices (acting as pods) and process the tasks they generate, whether they are periodic or dependent (in Directed Acyclic Graphs, DAGs). 
